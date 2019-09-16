@@ -15,4 +15,8 @@ https://a3-tvpatterson.glitch.me
         serve-favicon: Serves a favicon image
         connect-timeout: Sets a timeout for HTTP requests
         
+<<<<<<< HEAD
 Way too much time was spent on trying to get the authentication to work and I ran out of time for the rest of the application. Most of the frontend skeleton is there but some of the buttons don't actually do anything on the backend apart from going to different pages on the website.
+=======
+Way too much time was spent on trying to get the authentication to work and I ran out of time for the rest of the application. Most of the frontend skeleton is there but some of the buttons don't actually do anything on the backend apart from going to different pages on the website.
+>>>>>>> master
