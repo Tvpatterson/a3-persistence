@@ -1,9 +1,36 @@
 {
   "posts": [
     {
-      "body": "Post body",
-      "date": "9/16/2019",
-      "time": "2:58"
+      "body": "wqw",
+      "date": "09/19/2019",
+      "time": "2:03:27 PM"
+    },
+    {
+      "body": "fafsad",
+      "date": "09/19/2019",
+      "time": "2:03:31 PM"
+    },
+    {
+      "username": "admin",
+      "body": "TEST POST!!",
+      "date": "09/19/2019",
+      "time": "3:28:58 PM"
+    },
+    {
+      "username": "admin",
+      "body": "IT WORKS (Edit)",
+      "date": "09/19/2019",
+      "time": "3:38:41 PM"
+    },
+    {
+      "body": "fasadewrw",
+      "date": "09/19/2019",
+      "time": "3:40:34 PM"
+    },
+    {
+      "body": "fdsdfs",
+      "date": "09/19/2019",
+      "time": "3:40:42 PM"
     }
   ]
 }
