@@ -1,9 +1,11 @@
 const submitButton = document.getElementById('addPost');
 
+let editTime = "";
+let editDate = "";
+
 const submitPost = function() {
-  let username = document.getElementById('username');
   let message = document.getElementById('message');
-  let body = JSON.stringify({username:username, message:message.value});
+  let body = JSON.stringify({message:message.value});
   fetch('/submit', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
@@ -12,7 +14,19 @@ const submitPost = function() {
   .then(function(response) {
     window.location.href = response.url;
   });
-  return false;
+}
+
+const editPost = function() {
+  let message = document.getElementById('message');
+  let body = JSON.stringify({message:message.value, time:editTime, date:editDate})
+  fetch('/completeedit', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body:body
+  })
+  .then(function(response) {
+    window.location.href = response.url;
+  })
 }
 
 function updateButton() {
@@ -24,5 +38,21 @@ function updateButton() {
 }
 
 window.onload = function() {
-  submitButton.onclick = submitPost;
+  let edit = fetch('/isedit', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+  })
+  .then(response => response.json())
+  edit.then(function(response) {
+    if(response.edit == true) {
+      let messageBox = document.getElementById('message');
+      messageBox.value = response.message
+      editTime = response.time;
+      editDate = response.date;
+    }
+    if(response.edit == true) submitButton.onclick = editPost;
+      else {
+        submitButton.onclick = submitPost;
+    }
+  })
 }

@@ -3,7 +3,7 @@
 https://a3-tvpatterson.glitch.me
 
 - The goal of this application was to create a blog-type app in which you could create, delete, and modify posts on your account.
-- The biggest challenge was getting the authentication working properly. That part took so much time that it left me with little time to get the rest of the application working properly.
+- The biggest challenge was getting the authentication working properly. That part took a really long time to finish and it kept breaking throughout getting other thigns to work as well.
 - I used the local strategy with passport because I thought it would be the easiest to figure out.
 - I used the Cirrus.CSS framework because I really like how cool and simple it looked and it was really easy to implement the things that I needed. + the documentation on it is fantastic.
 - No modifications to the css were made.
@@ -14,9 +14,3 @@ https://a3-tvpatterson.glitch.me
         helmet: Sets HTTP headers to make the app more secure
         serve-favicon: Serves a favicon image
         connect-timeout: Sets a timeout for HTTP requests
-        
-<<<<<<< HEAD
-Way too much time was spent on trying to get the authentication to work and I ran out of time for the rest of the application. Most of the frontend skeleton is there but some of the buttons don't actually do anything on the backend apart from going to different pages on the website.
-=======
-Way too much time was spent on trying to get the authentication to work and I ran out of time for the rest of the application. Most of the frontend skeleton is there but some of the buttons don't actually do anything on the backend apart from going to different pages on the website.
->>>>>>> master
