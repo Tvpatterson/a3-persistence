@@ -14,4 +14,3 @@ https://a3-tvpatterson.glitch.me
         helmet: Sets HTTP headers to make the app more secure
         serve-favicon: Serves a favicon image
         connect-timeout: Sets a timeout for HTTP requests
-        
